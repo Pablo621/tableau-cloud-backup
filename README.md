@@ -90,9 +90,9 @@ These values must be provided as environment variables in the Lambda function.
 These values can be adjusted in the `config.py` file to control the backup behavior:
 
 ```python
-MAX_WORKBOOKS = 100         # Maximum number of Workbooks to back up
-MAX_DATASOURCES = 100       # Maximum number of Published Data Sources to back up
-MAX_PREP_FLOWS = 100        # Maximum number of Prep Flows to back up
+MAX_WORKBOOKS = 30         # Maximum number of Workbooks to back up
+MAX_DATASOURCES = 30       # Maximum number of Published Data Sources to back up
+MAX_PREP_FLOWS = 30        # Maximum number of Prep Flows to back up
 ```
 
 ---
@@ -116,3 +116,30 @@ MIT License – see [`LICENSE`](./LICENSE) for details.
 Pablo F., Solution Engineer @ Tableau  
 Presented at Tableau Conference 2025 – San Diego  
 Feel free to connect and share ideas!
+
+---
+
+## 📦 Optional: Build the Deployment ZIP from Requirements
+
+Although this project includes all dependencies directly in the `.zip`, you can regenerate it using the `requirements.txt` file if needed.
+
+### 🔧 Steps to create the deployment ZIP
+
+```bash
+# 1. Install dependencies in a local folder
+pip install -r requirements.txt -t package/
+
+# 2. Move into that folder
+cd package
+
+# 3. Zip everything inside the folder
+zip -r ../lambda_function.zip .
+
+# 4. Go back and add your Python scripts to the ZIP
+cd ..
+zip -g lambda_function.zip lambda_handler.py backup_metadata.py backup_content.py config.py
+```
+
+You can now upload `lambda_function.zip` to AWS Lambda manually or via the AWS CLI.
+
+> This workflow is optional but useful for sharing, automation, or rebuilding your environment.
