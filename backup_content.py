@@ -7,7 +7,7 @@ import os
 from datetime import datetime
 
 # Import shared configuration values used across scripts (e.g., Secrets Manager and Tableau settings)
-from config import SECRET_NAME, REGION_NAME, TABLEAU_BASE_URL, S3_BUCKET, SITE_ID
+from config import SECRET_NAME, REGION_NAME, TABLEAU_BASE_URL, S3_BUCKET, SITE_ID, MAX_WORKBOOKS, MAX_DATASOURCES, MAX_PREP_FLOWS
 
 # Configure logging (consider using AWS CloudWatch Logs for production)
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -30,6 +30,7 @@ def get_tableau_credentials():
     except Exception as e:
         logging.error(f"❌ Error retrieving Tableau credentials: {e}")
         raise
+
 
 def authenticate():
     """
@@ -488,12 +489,11 @@ def run_content_backup():
         # ✅ Backup Workbooks
         workbooks = list_workbooks(auth_token, SITE_ID)
         uploaded_workbooks = []
-        max_workbooks = 5  # Limit the number of workbooks to backup
         count_workbooks = 0
 
         for workbook in workbooks:
-            if count_workbooks >= max_workbooks:
-                logging.info(f"🔹 Limit reached: {max_workbooks} workbooks processed. Stopping backup.")
+            if count_workbooks >= MAX_WORKBOOKS:
+                logging.info(f"🔹 Limit reached: {MAX_WORKBOOKS} workbooks processed. Stopping backup.")
                 break
 
             workbook_id = workbook["id"]
@@ -514,12 +514,11 @@ def run_content_backup():
         # ✅ Backup Prep Flows
         prep_flows = list_prep_flows(auth_token, SITE_ID)
         uploaded_flows = []
-        max_prep_flows = 5  # Limit the number of Prep Flows to backup
         count_prep_flows = 0
 
         for flow in prep_flows:
-            if count_prep_flows >= max_prep_flows:
-                logging.info(f"🔹 Limit reached: {max_prep_flows} prep flows processed. Stopping backup.")
+            if count_prep_flows >= MAX_PREP_FLOWS:
+                logging.info(f"🔹 Limit reached: {MAX_PREP_FLOWS} prep flows processed. Stopping backup.")
                 break
 
             flow_id = flow["id"]
@@ -539,13 +538,12 @@ def run_content_backup():
 
         # ✅ Back up Published Data Sources
         data_sources = list_published_data_sources(auth_token, SITE_ID)
-        uploaded_data_sources = []
-        max_data_sources = 5  # Limit the number of Data Sources to backup
+        uploaded_data_sources = []       
         count_data_sources = 0
 
         for ds in data_sources:
-            if count_data_sources >= max_data_sources:
-                logging.info(f"🔹 Limit reached: {max_data_sources} data sources processed. Stopping backup.")
+            if count_data_sources >= MAX_DATASOURCES:
+                logging.info(f"🔹 Limit reached: {MAX_DATASOURCES} data sources processed. Stopping backup.")
                 break
 
             ds_id = ds["id"]
