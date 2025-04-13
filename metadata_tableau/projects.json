@@ -1,0 +1,67 @@
+{
+    "pagination": {
+        "pageNumber": "1",
+        "pageSize": "5",
+        "totalAvailable": "5"
+    },
+    "projects": {
+        "project": [
+            {
+                "id": "a3a494da-0c79-4aaf-b595-57cd7bda423c",
+                "name": "Example Project 1",
+                "description": "Demo description for project 1",
+                "createdAt": "2025-01-03T09:55:31.898309Z",
+                "updatedAt": "2025-04-03T09:55:31.898323Z",
+                "contentPermissions": "ManagedByOwner",
+                "owner": {
+                    "id": "b0a8181a-f835-4519-99fa-e6c442e98276"
+                }
+            },
+            {
+                "id": "c9e3b773-5cc2-447e-b590-88c2911df965",
+                "name": "Example Project 2",
+                "description": "Demo description for project 2",
+                "createdAt": "2025-01-02T09:55:31.898361Z",
+                "updatedAt": "2025-04-02T09:55:31.898364Z",
+                "contentPermissions": "ManagedByOwner",
+                "owner": {
+                    "id": "f5b748ef-cd65-452e-ad8b-c9a23751bff6"
+                }
+            },
+            {
+                "id": "c5960a9a-c48f-4aec-8488-73b8b07d8d6c",
+                "name": "Example Project 3",
+                "description": "Demo description for project 3",
+                "createdAt": "2025-01-01T09:55:31.898380Z",
+                "updatedAt": "2025-04-01T09:55:31.898383Z",
+                "contentPermissions": "LockedToProject",
+                "owner": {
+                    "id": "5671e716-1050-4f68-991f-ea6b29a877c3"
+                }
+            },
+            {
+                "id": "900d6b81-cd82-47ef-afa9-2e16003627d0",
+                "name": "Example Project 4",
+                "description": "Demo description for project 4",
+                "createdAt": "2024-12-31T09:55:31.898400Z",
+                "updatedAt": "2025-03-31T09:55:31.898403Z",
+                "contentPermissions": "ManagedByOwner",
+                "owner": {
+                    "id": "99bc4560-0294-4ba0-8471-9bded4ef2319"
+                }
+            },
+            {
+                "id": "982f758b-7920-478c-a69b-31d185ebc8a2",
+                "name": "Nested Project Example",
+                "description": "This is a child project",
+                "createdAt": "2025-04-13T09:55:31.898590Z",
+                "updatedAt": "2025-04-13T09:55:31.898593Z",
+                "contentPermissions": "ManagedByOwner",
+                "owner": {
+                    "id": "56b4845c-9194-489c-8fa0-241116f79e7a"
+                },
+                "parentProjectId": "a3a494da-0c79-4aaf-b595-57cd7bda423c"
+            }
+        ]
+    }
+}
