@@ -1,0 +1,59 @@
+{
+    "pagination": {
+        "pageNumber": "1",
+        "pageSize": "100",
+        "totalAvailable": "3"
+    },
+    "users": {
+        "user": [
+            {
+                "domain": {
+                    "name": "external"
+                },
+                "authSetting": "TableauIDWithMFA",
+                "email": "alex.morgan@example.com",
+                "externalAuthUserId": "1b8d4a65-0c5d-4ddb-983b-c0b6c44a43f8",
+                "fullName": "Alex Morgan",
+                "id": "0fccb2a0-288d-451d-8223-213ea580d365",
+                "lastLogin": "2025-04-13T09:51:42Z",
+                "name": "alex.morgan@example.com",
+                "siteRole": "SiteAdministratorCreator",
+                "locale": "es_ES",
+                "language": "fr",
+                "idpConfigurationId": "b99b086a-88d4-4019-bf0e-863a602ab1b9"
+            },
+            {
+                "domain": {
+                    "name": "external"
+                },
+                "authSetting": "ServerDefault",
+                "email": "taylor.smith@example.com",
+                "externalAuthUserId": "b00d4473-355a-4f5e-bbe9-d3b63f659b0c",
+                "fullName": "Taylor Smith",
+                "id": "10a4f257-60f3-4b37-bcdb-97111c6444ad",
+                "lastLogin": "2025-03-14T09:51:42Z",
+                "name": "taylor.smith@example.com",
+                "siteRole": "SiteAdministratorCreator",
+                "locale": "en_US",
+                "language": "es",
+                "idpConfigurationId": "N/A"
+            },
+            {
+                "domain": {
+                    "name": "external"
+                },
+                "authSetting": "ServerDefault",
+                "email": "jordan.lee@example.com",
+                "externalAuthUserId": "caf337b7-2ecb-47ee-9f7b-7a9b339c17f5",
+                "fullName": "Jordan Lee",
+                "id": "c2bd5447-53d6-41a1-a228-1744d83bd19e",
+                "lastLogin": "2025-02-12T09:51:42Z",
+                "name": "jordan.lee@example.com",
+                "siteRole": "Viewer",
+                "locale": "",
+                "language": "fr",
+                "idpConfigurationId": "N/A"
+            }
+        ]
+    }
+}
