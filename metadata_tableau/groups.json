@@ -1,0 +1,75 @@
+{
+    "pagination": {
+        "pageNumber": "1",
+        "pageSize": "4",
+        "totalAvailable": "4"
+    },
+    "groups": {
+        "group": [
+            {
+                "domain": {
+                    "name": "example_domain"
+                },
+                "id": "c0b45e7d-2a1a-4e9b-a557-aa8c8eca8ae5",
+                "name": "Group A",
+                "users": [
+                    {
+                        "id": "752bf7e4-0f37-4934-b16d-13c52c6e53a9",
+                        "name": "user1@example.com"
+                    },
+                    {
+                        "id": "0d50d519-3b92-42a1-8f75-b274e8af1387",
+                        "name": "user1@example.com"
+                    },
+                    {
+                        "id": "be6e0ad1-7236-4fd5-806d-d16cfa039a37",
+                        "name": "user1@example.com"
+                    },
+                    {
+                        "id": "8e763b4a-5675-4cb1-8039-bead499ec914",
+                        "name": "user1@example.com"
+                    }
+                ]
+            },
+            {
+                "domain": {
+                    "name": "example_domain"
+                },
+                "id": "88fb3ad3-7983-4b80-8acb-c1ee8da661b7",
+                "name": "Group B",
+                "users": [
+                    {
+                        "id": "744f8da0-0712-4dd6-804d-d4f21cfc7444",
+                        "name": "user2@example.com"
+                    }
+                ]
+            },
+            {
+                "domain": {
+                    "name": "example_domain"
+                },
+                "id": "ad8e63df-bf31-406a-aa49-4fd94e05f6cf",
+                "name": "Group C",
+                "users": [
+                    {
+                        "id": "3fc21d4c-8b26-445a-8a8c-43620fcd0b48",
+                        "name": "user3@example.com"
+                    }
+                ]
+            },
+            {
+                "domain": {
+                    "name": "example_domain"
+                },
+                "id": "e8d3aa29-b7f5-416d-999e-85fc6d4db248",
+                "name": "Group D",
+                "users": [
+                    {
+                        "id": "c7242a8b-5324-42d9-a050-8690c84ba36d",
+                        "name": "user4@example.com"
+                    }
+                ]
+            }
+        ]
+    }
+}
