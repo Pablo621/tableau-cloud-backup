@@ -1,0 +1,112 @@
+[
+    {
+        "id": "1c7580a9-6f41-40ac-a2d8-26a3274c54f8",
+        "name": "Example Data Source 1",
+        "project": {
+            "id": "858628ea-03cc-4ded-b3ac-1a3a2a5284b7",
+            "name": "Project A"
+        },
+        "owner": {
+            "id": "68d060ae-e526-42f8-ab1a-613cba6e3a67",
+            "name": "user1@example.com"
+        },
+        "contentUrl": "example_datasource_1",
+        "createdAt": "2024-09-25T09:52:54Z",
+        "updatedAt": "2025-04-03T09:52:54Z",
+        "size": "1",
+        "encryptExtracts": "false",
+        "hasExtracts": "true",
+        "type": "textscan",
+        "isCertified": "true",
+        "useRemoteQueryAgent": "false",
+        "description": ""
+    },
+    {
+        "id": "47ed5d8d-4e3e-4467-8e86-d052c8aa02cf",
+        "name": "Example Data Source 2",
+        "project": {
+            "id": "81ad4436-61e8-480a-ada3-ea41c4b21e95",
+            "name": "Project B"
+        },
+        "owner": {
+            "id": "93dc75f2-742b-4653-8726-9da161eb3103",
+            "name": "user2@example.com"
+        },
+        "contentUrl": "example_datasource_2",
+        "createdAt": "2024-09-24T09:52:54Z",
+        "updatedAt": "2025-04-02T09:52:54Z",
+        "size": "1",
+        "encryptExtracts": "false",
+        "hasExtracts": "true",
+        "type": "hyper",
+        "isCertified": "false",
+        "useRemoteQueryAgent": "false",
+        "description": ""
+    },
+    {
+        "id": "aa5044f6-07b4-43b7-a6c9-8c9a7bf7a0cb",
+        "name": "Example Data Source 3",
+        "project": {
+            "id": "45ad7a54-10e4-4ec9-aad5-742ab2a3b6f2",
+            "name": "Project C"
+        },
+        "owner": {
+            "id": "b17bc4dd-36ab-4eda-934e-f57dddfe2a99",
+            "name": "user3@example.com"
+        },
+        "contentUrl": "example_datasource_3",
+        "createdAt": "2024-09-23T09:52:54Z",
+        "updatedAt": "2025-04-01T09:52:54Z",
+        "size": "1",
+        "encryptExtracts": "false",
+        "hasExtracts": "false",
+        "type": "mysql",
+        "isCertified": "true",
+        "useRemoteQueryAgent": "false",
+        "description": ""
+    },
+    {
+        "id": "c7c845af-801b-4502-8cdc-03e5385bbc35",
+        "name": "Example Data Source 4",
+        "project": {
+            "id": "9a4026c1-8a90-42a4-99ca-5db9727b02e6",
+            "name": "Project D"
+        },
+        "owner": {
+            "id": "26b4a024-fb30-4ac5-8f2e-acbedb2459c9",
+            "name": "user4@example.com"
+        },
+        "contentUrl": "example_datasource_4",
+        "createdAt": "2024-09-22T09:52:54Z",
+        "updatedAt": "2025-03-31T09:52:54Z",
+        "size": "1",
+        "encryptExtracts": "false",
+        "hasExtracts": "false",
+        "type": "hyper",
+        "isCertified": "true",
+        "useRemoteQueryAgent": "false",
+        "description": ""
+    },
+    {
+        "id": "87e91058-b009-4fb9-a375-c47974ec098f",
+        "name": "Example Data Source 5",
+        "project": {
+            "id": "8904f3eb-b9dd-46e8-aab2-309351ec8fe8",
+            "name": "Project E"
+        },
+        "owner": {
+            "id": "3f6c092c-eba5-41c0-bad9-a38a92d935df",
+            "name": "user5@example.com"
+        },
+        "contentUrl": "example_datasource_5",
+        "createdAt": "2024-09-21T09:52:54Z",
+        "updatedAt": "2025-03-30T09:52:54Z",
+        "size": "1",
+        "encryptExtracts": "false",
+        "hasExtracts": "false",
+        "type": "hyper",
+        "isCertified": "false",
+        "useRemoteQueryAgent": "false",
+        "description": ""
+    }
+]
