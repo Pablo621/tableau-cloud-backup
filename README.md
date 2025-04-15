@@ -90,9 +90,9 @@ These values must be provided as environment variables in the Lambda function.
 These values can be adjusted in the `config.py` file to control the backup behavior:
 
 ```python
-MAX_WORKBOOKS = 30         # Maximum number of Workbooks to back up
-MAX_DATASOURCES = 30       # Maximum number of Published Data Sources to back up
-MAX_PREP_FLOWS = 30        # Maximum number of Prep Flows to back up
+MAX_WORKBOOKS = 3         # Maximum number of Workbooks to back up
+MAX_DATASOURCES = 3       # Maximum number of Published Data Sources to back up
+MAX_PREP_FLOWS = 3        # Maximum number of Prep Flows to back up
 ```
 
 ---
